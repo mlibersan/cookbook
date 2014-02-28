@@ -1,0 +1,38 @@
+<div id="clientprofile" ng-cloak ng-controller="cookbookEditAppCtrl">
+    <div class="container" >
+		<div class="row">
+			<div class="col-md-12">
+				<H3>COOKBOOK - EDIT</H3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2">
+				&nbsp;
+			</div>
+		</div>
+        <div class="row" >
+            <div class="col-md-2">
+                <b>NAME</b>
+            </div>
+            <div class="col-md-2">
+            	<input type="text" ng-model="cookbook.name" />
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col-md-2">
+                <b>CATEGORY</b>
+            </div>
+            <div class="col-md-2">
+            	<input type="text" ng-model="cookbook.category" />
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col-md-2">
+				<a href="index.html#/list" ng-click="createCookbook()">Create</a>
+            </div>
+            <div class="col-md-2">
+				<a href="index.html#/list" >Cancel</a>
+            </div>
+        </div>
+        
+</div>

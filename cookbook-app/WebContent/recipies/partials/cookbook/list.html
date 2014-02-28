@@ -1,0 +1,44 @@
+<div id="clientprofile" ng-cloak
+	ng-controller="clientprofileListAppCtrl">
+	<div class="container">
+		<div class="row"  style="margin: 5px">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<H3>COOKBOOK LIST</H3>
+			</div>
+		</div>
+		<div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				&nbsp;
+			</div>
+		</div>
+		<div class="row" style="margin: 5px">
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+				<b>ID</b>
+			</div>
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+				<b>CATEGORY</b>
+			</div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+				<b>NAME</b>
+			</div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+				<b>ACTIONS</b>
+			</div>
+		</div>
+		<div class="row" ng-repeat="client in clientList"  style="margin: 5px">
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+			{{cookbook.name}}</div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			{{cookbook.category}}</div>
+             <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+				<div style="margin: 5px"><a href="#" ng-click="deleteClient('{{client.id}}')">Delete</a></div>
+				<div style="margin: 5px"><a href="index.html#/view/{{client.id}}">View</a></div>
+			</div>
+		</div>
+		<div class="row"  style="margin: 5px">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+				<a href="index.html#/new">Create New Cookbook</a>
+			</div>
+		</div>
+	</div>
+</div>
